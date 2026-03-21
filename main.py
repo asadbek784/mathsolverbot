@@ -13,10 +13,10 @@ from flask_cors import CORS
 # ════════════════════════════════════════════════
 #   SOZLAMALAR
 # ════════════════════════════════════════════════
-BOT_TOKEN   = "8709200669:AAHbOLTKXQAqixaqchChgbU6IUxTFAvDt4w"   # @BotFather dan
-ADMIN_TG_ID = "7861699284"            # @userinfobot dan
-GEMINI_KEY  = "AIzaSyC-5gdUTjX64LD2q7fV3HCE1f6U-UQHxH0"  # aistudio.google.com dan (TEKINGA)
-SERVER_PORT = int(os.environ.get("PORT", 5000))
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+ADMIN_TG_ID = "7861699284"
+GEMINI_KEY = os.getenv("GEMINI_API_KEY")
+SERVER_PORT = int(os.environ.get("PORT", 10000))
 # ════════════════════════════════════════════════
 
 BASE   = os.path.dirname(os.path.abspath(__file__))
